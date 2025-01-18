@@ -1,0 +1,204 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: #f9f9f9;
+    overflow-x: hidden;
+  }
+  
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #4caf50, #388e3c);
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1s ease-out;
+  }
+  
+  .header h1 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+  }
+  
+  .nav-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+  }
+  
+  .nav-links li {
+    display: inline-block;
+    margin-right: 30px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.3rem;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .nav-links a:hover {
+    color: #ffd700;
+    transform: translateY(-5px);
+  }
+  
+  /* Section Styles */
+  .section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 2rem 0;
+    border-radius: 10px;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+    transform: translateY(30px);
+  }
+  
+  .section h2 {
+    font-size: 2.8rem;
+    color: #2e7d32;
+    margin-bottom: 1.5rem;
+    animation: slideUp 1s ease-in-out;
+  }
+  
+  .project, .certification-item, .achievement-item, .skills-item {
+    text-align: left;
+    margin-bottom: 2rem;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project:hover, .certification-item:hover, .achievement-item:hover, .skills-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .project h3, .skills-item strong, .certification-item {
+    font-size: 1.8rem;
+    color: #388e3c;
+    margin-bottom: 10px;
+  }
+  
+  .project p, .skills-item, .achievement-item {
+    color: #555;
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #388e3c;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  footer p {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+  }
+  
+  /* Button Hover Effects */
+  a {
+    text-decoration: none;
+    position: relative;
+    z-index: 0;
+    padding: 10px 25px;
+    background-color: #4caf50;
+    color: white;
+    font-weight: bold;
+    border-radius: 25px;
+    display: inline-block;
+    margin: 10px 0;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  }
+  
+  a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    background-color: #388e3c;
+  }
+  
+  a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.2);
+    z-index: -1;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: right;
+    transform: scaleX(0);
+  }
+  
+  a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(-50px);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .header .nav-links {
+      flex-direction: column;
+      margin-top: 20px;
+    }
+  
+    .header .nav-links li {
+      margin-bottom: 1rem;
+    }
+  
+    .section {
+      padding: 3rem 1.5rem;
+    }
+  
+    .project, .certification-item, .achievement-item, .skills-item {
+      margin-bottom: 1.5rem;
+    }
+  }
+  
