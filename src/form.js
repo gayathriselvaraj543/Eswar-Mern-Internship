@@ -16,14 +16,13 @@ const Form = () => {
     const handleChange2 = (e) =>{
         setPassword(e.target.value);
     }
-  
   return (
     <div>
         <form >
             <label >
                 Name:
                 <br></br>
-                <input type="text" value={name} onChange={handleChange} placeholder='Enter your name'  />
+                <input type="text" value={name} onChange={handleChange} placeholder='Enter your name'  /> 
                 <MdDriveFileRenameOutline size={20} />
                 </label>
                 <br></br>
@@ -40,8 +39,6 @@ const Form = () => {
                 <input type="password" value={password} onChange={handleChange2} placeholder='Enter Password' />
                 <RiLockPasswordFill size={20}/>
                 <p>{password.length >8? "Password must be 8 characters long" : ""}</p>
-
-                
                 </label>
         </form>
       <p>Your name is:{name}</p>

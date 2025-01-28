@@ -44,13 +44,17 @@ const Portfolio = () => {
           <p>Implement a vehicle parking system that manages the availability of parking spots, tracks vehicle details, and calculates parking fees. Use collections for managing parking spots, inheritance for different vehicle types, and file handling for saving parking records.</p>
           <p><strong>Programming language:</strong> Java, <strong>Core:</strong> DBMS</p>
         </div>
+        <br></br>
+       
         <div className="project">
           <h3>Recipe Recommendation System</h3>
           <p>Create a console-based application to recommend recipes based on ingredients a user has on hand. Users can input available ingredients, and the system will provide a list of possible recipes. Core Java will manage input handling, recommendation logic, and file handling, while MySQL will store recipe data and ingredient information.</p>
           <p><strong>Programming language:</strong> Java, <strong>Core:</strong> DBMS</p>
         </div>
       </section>
-
+      <br></br>
+       
+        <br></br>
       <section id="certifications" className="section">
         <h2>Certifications</h2>
         <div className="certification-item">Introduction in C - Sololearn</div>
@@ -58,11 +62,11 @@ const Portfolio = () => {
         <div className="certification-item">Pandas - Kaggle</div>
         <div className="certification-item">Matplotlib - Great Learning</div>
         <div className="certification-item">Introduction to ML – Kaggle</div>
-        <div className="certification-item">Fundamentals of Generative AI – Guvi SAWIT.AI</div>
         <div className="certification-item">SQL(Basics) – Hackerank</div>
         <div className="certification-item">Java (Basics) - Skillrack</div>
       </section>
-
+      <br></br>
+      
       <section id="achievements" className="section">
         <h2>Achievements</h2>
         <div className="achievement-item">CodeChef: Rating – 12657</div>
@@ -71,6 +75,7 @@ const Portfolio = () => {
         <div className="achievement-item">LeetCode: Solved 70 Problems</div>
       </section>
 
+        
       <section id="skills" className="section">
         <h2>Skills</h2>
         <div className="skills-item">
