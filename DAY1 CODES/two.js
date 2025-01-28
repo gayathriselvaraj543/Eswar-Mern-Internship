@@ -1,0 +1,1 @@
+console.log(" JS its separate file")
